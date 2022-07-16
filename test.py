@@ -4,15 +4,9 @@ import pytest
 def test_empty_string():
     assert calc.add('') == 0
 
-def test_get_called_Count():
-    assert calc.GetCalledCount() == 1
-
 def test_single_number_string():
     assert calc.add('6') == 6
     assert calc.add('0') == 0
-
-def test_get_called_Count():
-    assert calc.GetCalledCount() == 3
           
 def test_two_numbers_string():
     assert calc.add('1,4') == 5
@@ -50,8 +44,5 @@ def test_handle_negative_numbers():
 def test_any_length_multiple_delimiters():
     assert calc.add('//++%%\n1++2%%3') == 6
     assert calc.add('//++%\n1++2%7\n10') == 20
-
-def test_get_called_Count():
-    assert calc.GetCalledCount() == 21
 
 
