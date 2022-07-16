@@ -1,4 +1,4 @@
-import tdd_string_calculator_optimized as calc
+import string_calculator as calc
 import pytest
 
 def test_empty_string():
